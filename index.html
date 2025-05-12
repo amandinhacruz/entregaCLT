@@ -10,19 +10,18 @@
 
     <header class="navbar">
         <ul class="navbar-list">
-            <li><a href="" target="main">Sobre mim</a></li>
-            <li><a href="" target="main">Educação</a></li>
-            <li><a href="" target="main">Experiência</a></li>
-            <li><a href="" target="main">Habilidades</a></li>
-            <li><a href="" target="main">Cursos Adicionais</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="" target="main">Endereço</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#educacao" >Educação</a></li>
+            <li><a href="#experiencia" >Experiência</a></li>
+            <li><a href="#habilidades" >Habilidades</a></li>
+            <li><a href="#contato" >Contato</a></li>
+            <li><a href="#endereco" >Endereço</a></li>
     </header>
     
     <main>
-        <div class="about">
+        <div id="sobre" class="about">
             <div class="about-text">
-                <h1>Olá!</h1>
+                <h1>Olá</h1>
                 <h2>Sou Amanda Cruz, dev full stack.</h2>
                 <p>Graduanda do Curso Análise e Desenvolvimento de Sistemas e, busco uma oportunidade de crescimento na área de tecnologia, onde possa aplicar meus conhecimentos em
                 lógica de programação, SQL, Java, Spring Boot,
@@ -38,16 +37,145 @@
             <img src="/assets/img.jpg" alt="Amanda Cruz" class="about-img">
         </div>
 
-        <div class="contact">
-            <form id="meuFormulario">
-                <label for="">Email:</label>
-                <input type="text" placeholder="xxxxxx@gmail.com">
-                <label for="">Texto:</label>
-                <input type="text" placeholder="Digite sua mensagem aqui!">
-                <button type="submit">Enviar mensagem</button>
-            </form>
-
+        <div id="educacao" class="education">
+            <h2>Educação</h2>
+            <div  class="cards">
+                <div class="card-education">
+                    <img src="assets/senac.png" alt="">
+                    <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                    <p>                     
+                        Instituição: Senac | Período: agosto de 2024 - fevereiro de 2027 
+                        Bolsista do programa Embarque Digital 
+                    </p>
+                </div>
+                <div class="card-education">
+                    <img src="assets/generation.jpg" alt="">
+                    <h3>Bootcamp - Desenvolvedor Full Stack Java React</h3>
+                    <p>                    
+                        Instituição: Generation Brasil | Período: novembro de 2023 - março de 2024 | Carga horária: 447h 
+                    </p>
+                </div >
+                <div class="card-education">
+                    <img src="assets/cesar.jpg" alt="">
+                    <h3> Fast - Aceleração de Carreira em FRONT-END </h3>
+                    <p>
+                        Instituição: CESAR School | Período: julho de 2024 - setembro de 2024 | Carga horária: 72h. 
+                    </p>
+                </div>
+                <div  class="card-education">
+                    <img src="assets/coursera.png" alt="" >
+                    <h3>Certificado Profissional de Análise de Dados do Google </h3>
+                    <p>
+                         Google | Coursera | Início: Janeiro de 2025 – previsão de conclusão: Julho de 2025
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <div id="experiencia" class="experience">
+            <h2>Experiência Profissional</h2>
+            <div class="experience-text">
+                <p>Fui proprietária de uma loja online, atuando em todas as etapas do processo — 
+                    desde a concepção dos produtos até a venda e o envio. Gerenciei o atendimento 
+                    ao cliente com foco na excelência e fidelização, além de coordenar o design e a 
+                    produção das peças, demonstrando criatividade e atenção aos detalhes. Também fui 
+                    responsável pela logística de envio, assegurando entregas pontuais e eficientes.
+                </p>
+            </div>
+            <div class="experience-imgs">
+                <img src="assets/colar1.jpg" alt="">
+                <img src="assets/colar.jpg" alt="">
+                <img src="assets/colar2.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="habilidades" class="skills-section"> 
+            <div class="soft-skill"> 
+                <h3>Habilidades Técnicas</h3> 
+                <ul> 
+                    <li><strong>Lógica de Programação e SQL:</strong> Experiência em análise e resolução de problemas usando lógica de programação, e prática na criação e manipulação de bancos de dados.</li> 
+                    <li><strong>Desenvolvimento Web Full Stack:</strong> Proficiente no desenvolvimento de aplicações web utilizando HTML, CSS, JavaScript, Java, e frameworks como React e Spring Boot.</li> 
+                    <li><strong>WebAPI:</strong> Noções de desenvolvimento e integração de APIs RESTful para garantir comunicação eficaz entre sistemas.</li> 
+                    <li><strong>Design de Interface:</strong> Experiência com ferramentas de design como Figma, criando protótipos interativos e interfaces de usuário centradas no cliente.</li> 
+                    <li><strong>Controle de Versionamento:</strong> Proficiência em Git e GitHub.</li> <li><strong>Metodologias Ágeis:</strong> Familiaridade com Scrum.</li> 
+                </ul> 
+            </div> 
+            <div class="hard-skill"> 
+                <h3>Habilidades Interpessoais</h3> 
+                <ul> <li>Excelente comunicação, com experiência no atendimento ao cliente e coordenação de projetos.</li> 
+                    <li>Capacidade de trabalho em equipe, adquirida em ambientes multidisciplinares durante o bootcamp.</li> 
+                    <li>Proatividade na resolução de problemas e disposição para aprender com feedback.</li> 
+                </ul> 
+            </div> 
+        </div>
+
+        <form id="contato" class="formulario" > 
+            <h2>Entre em Contato</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+            
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required />
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(99) 99999-9999" required />
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            
+            <label for="mensagem">Mensagem:</label>
+            
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <label for="idioma">Língua Aplicada:</label>
+            <select id="idioma" name="idioma" required>
+            <option value="">Selecione</option>
+            <option value="ingles">Inglês</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="frances">Francês</option>
+            <option value="portugues">Português (pt-br)</option>
+            </select>
+            
+            <label for="arquivo">Anexe o Protótipo (PDF, DOC, DOCX, JPEG, PNG):</label>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx, .jpeg, .jpg, .png" required />
+            
+            <label for="linguagens">Linguagens Preferidas:</label>
+            <select id="linguagens" name="linguagens[]" multiple required>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="csharp">C#</option>
+            <option value="php">PHP</option>
+            </select>
+            
+            <p>Banco de Dados Recomendado:</p> <label><input type="radio" name="banco" value="mysql" required /> MySQL</label> <label><input type="radio" name="banco" value="postgresql" /> PostgreSQL</label> <label><input type="radio" name="banco" value="mongo" /> MongoDB</label> <label><input type="radio" name="banco" value="sqlserver" /> SQL Server</label>
+            <label for="turno">Turno de preferência para reuniões:</label>
+            <select id="turno" name="turno" required>
+            <option value="">Selecione</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+            </select>
+            
+            <label for="horario">Melhor horário para reuniões:</label>
+            <input type="time" id="horario" name="horario" required />
+            
+            <label for="data-entrega">Previsão desejada de entrega:</label>
+            <input type="date" id="data-entrega" name="dataEntrega" required />
+            
+            <div class="botoes"> <button type="reset">Limpar</button> <button type="submit">Enviar</button> </div> 
+        </form>
+
+
+      <div id="endereco" class="endereco">
+        <h3>Endereço</h3>
+        <div class="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.7014686634966!2d-34.89764292410997!3d-8.029684491997072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab185a986ff96b%3A0xd09ad3dc4eaed04f!2sR.%20Alm.%20Noronha%20de%20Carvalho%2C%20Recife%20-%20PE%2C%2052041-380!5e0!3m2!1spt-PT!2sbr!4v1743771060375!5m2!1spt-PT!2sbr"
+            ></iframe>
+        </div>
+    </div>
+
+
     </main>
             
      
